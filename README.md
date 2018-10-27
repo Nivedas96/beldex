@@ -12,7 +12,6 @@ Portions Copyright (c) 2012-2013 The Cryptonote and Monerov developers.
 | OSX 10.12             |  amd64   | [![OSX 10.12 amd64](https://build.monerov.org/png?builder=monerov-static-osx-10.12)](https://build.monerov.org/builders/monerov-static-osx-10.12)
 | Windows (MSYS2/MinGW) |  amd64   | [![Windows (MSYS2/MinGW) amd64](https://build.monerov.org/png?builder=monerov-static-win64)](https://build.monerov.org/builders/monerov-static-win64)
 
-
 ## Introduction
 
 Beldex is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
@@ -81,10 +80,6 @@ Debian / Ubuntu one liner for all dependencies
 Clone recursively to pull-in needed submodule(s):
 
 `$ git clone --recursive https://github.com/beldex-coin/beldex.git`
-
-If you already have a repo cloned, initialize and update:
-
-`$ cd beldex && git submodule init && git submodule update`
 
 ### Build instructions
 
@@ -292,15 +287,15 @@ beldex-wallet-cli, and possibly beldexd, if you get crashes refreshing.
 
 ## Running beldex wallet
 You can run the beldex wallet from the `bin/` sub-directory inside `build` directory
-        
+
         ./bin/beldex-wallet-cli
 The above command will ask you for the new wallet file and password, if you wish to create the wallet using your own electrum seed you can do it using the below command
-        
+
         ./bin/beldex-wallet-cli --generate-new-wallet my_wallet_file  --electrum-seed="my mnemonic seed" --password "my password" --log-file my_wallet_log_file;    
 
 ## Running wallet RPC
 The wallet rpc can also be run from the `bin/` sub-directory inside `build` directory
-        
+
         ./bin/beldex-wallet-rpc.exe --wallet-file my-wallet-file --prompt-for-password --rpc-bind-port 16969    
 
 ## Internationalization
