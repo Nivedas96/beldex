@@ -1,0 +1,4 @@
+[submodule "external/unbound"]
+	path = external/unbound
+	url = https://bitbucket.org/beldex/unbound.git
+	branch = master
